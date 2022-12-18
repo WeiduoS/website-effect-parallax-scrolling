@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  img#stars {
+    z-index: 0;
+  }
+
+  img#moon {
+    mix-blend-mode: screen;
+    z-index: 1;
+  }
+
+  img#mountains-behind {
+    z-index: 2;
+  }
+
+  img#mountains-front {
+    z-index: 4;
+  }
+
+  #jumbotron-title{
+    color: antiquewhite;
+    white-space: nowrap;
+    font-size: 60px;
+    position: absolute;
+    text-transform: capitalize;
+    z-index: 3;
+    right: -50px
+  }
+
+  #jumbotron-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: antiquewhite;
+    border-radius: 20px;
+    color: #2b1055;
+    font-size: 20px;
+    display: inline-block;
+    z-index: 3;
+    transform: translateY(100px);
+  }
+}
+
+
