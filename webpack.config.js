@@ -20,7 +20,7 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
         clean: true,
         libraryTarget: 'umd',
-        publicPath: '/'
+        // publicPath: '/'
     },
     mode: 'development',
     devtool: 'source-map',
